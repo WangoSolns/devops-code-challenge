@@ -5,6 +5,8 @@ metadata:
   namespace: wordpress
 type: Opaque
 data:
+  # we typically load these from AWS SecretsManager, this is
+  # hard-coded to avoid any unexpected errors
   password: Y29kZWNoYWxsZW5nZQ==
 ---
 apiVersion: v1

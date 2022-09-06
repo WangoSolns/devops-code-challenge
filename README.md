@@ -12,18 +12,22 @@ the necessary tools. You can build a copy from the included `Containerfile`.
 
 ## Scenario
 
-You've been handed a project that is halfway built, your goal is to complete it. The purpose of the 
-project is to get Wordpress running in Minikube. This is not meant to be incredibly challenging and
-should not take more than an hour or two of your time, but requires a general understanding of git and
-kubernetes in order to deploy and debug the example.
+You've been handed half of a kubernetes blog deployment and your goal is to complete it. The purpose of the
+project is to get Wordpress running in Minikube and using a MySQL database. Wordpress is not our main platform,
+but we wanted an example where errors would be easy to find on Google, and the resources in `kubernetes/` are
+based on resources from the kubernetes documentation.
 
-All of our tests and requirements are provided and can be run using the `make test` target. We do
-not have any hidden tests. Please do not remove any tests. If you fix any bugs with the tests,
+This is not meant to be incredibly challenging and should not take more than an hour or two of your time, but
+requires a general understanding of git and kubernetes in order to deploy and debug the example. Please let
+HR know if you have any questions.
+
+All of our requirements are documented and tests can be run using the `make test` target. We do not have any
+hidden tests. Please do not remove any tests. If you find and fix any bugs within the tests,
 please describe your changes. Testing will be performed in a clean minikube cluster meeting the
 version requirements above. Tests can also be run individually, please see `make help` for more.
 
 Please provide HR with a link to a public Git repository containing your solution, hosted somewhere
-such as Github.com or Gitlab.com. Please do not submit any ZIP archives of your code.
+such as Github.com or Gitlab.com. Please do not submit any ZIP archives or Google Drive folders of your code.
 
 ### Contents
 
