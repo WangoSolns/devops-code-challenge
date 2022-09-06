@@ -1,0 +1,56 @@
+# DevOps Code Challenge
+
+This Kubernetes challenge was designed to be completed on Linux or MacOS with the following dependencies:
+
+ - Minikube v1.21 or newer
+ - GNU Make 4.3 or newer
+
+Generating a `CHANGELOG.md` also requires https://github.com/conventional-changelog/standard-version.
+
+If you do not want to install these dependencies on your local machine, a container is provided with all of
+the necessary tools. You can build a copy from the included `Containerfile`.
+
+## Scenario
+
+You've been handed a project that is halfway built, your goal is to complete it. The purpose of the 
+project is to get Wordpress running in Minikube. This is not meant to be incredibly challenging and
+should not take more than an hour or two of your time, but requires a general understanding of git and
+kubernetes in order to deploy and debug the example.
+
+All of our tests and requirements are provided and can be run using the `make test` target. We do
+not have any hidden tests. Please do not remove any tests. If you fix any bugs with the tests,
+please describe your changes. Testing will be performed in a clean minikube cluster meeting the
+version requirements above. Tests can also be run individually, please see `make help` for more.
+
+Please provide HR with a link to a public Git repository containing your solution, hosted somewhere
+such as Github.com or Gitlab.com. Please do not submit any ZIP archives of your code.
+
+### Contents
+
+This repository contains:
+
+- a broken MySQL statefulset resource
+- the stub of a Wordpress deployment resource
+- a Makefile to deploy the YAML and run tests
+- a Containerfile with all of the necessary tools to complete this challenge
+
+### Requirements
+
+1. fix the MySQL stateful set
+2. add a Wordpress deployment matching the selectors on the `wordpress` service
+    - this should be stateless except for PVCs
+3. add liveness and readiness probes to all containers
+4. make sure all pods start up correctly and remain healthy after `make deploy`
+5. make sure all tests pass during `make test`
+6. fork this repository, commit your changes into a `feature/` branch, and push to a public git repository
+    - you can push to your personal Github or Gitlab account, or submit a pull request to our Github repository
+
+### Bonus Points
+
+1. attach the provided `PersistentVolumeClaim` to `/var/www/html` in the Wordpress deployment to make it stateful
+2. apply resource limits to the kubernetes pods
+3. apply a pod security policy to the kubernetes pods
+4. include a kubernetes Ingress resource for the AWS ALB ingress controller
+    - we use https://github.com/kubernetes-sigs/aws-load-balancer-controller for ingress
+5. a branch with conventional commit history and a CHANGELOG file
+    - we typically use https://github.com/conventional-changelog/standard-version to generate the CHANGELOG file
