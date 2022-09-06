@@ -7,8 +7,8 @@ This Kubernetes challenge was designed to be completed on Linux or MacOS with th
 
 Generating a `CHANGELOG.md` also requires https://github.com/conventional-changelog/standard-version.
 
-If you do not want to install these dependencies on your local machine, a container is provided with all of
-the necessary tools. You can build a copy from the included `Containerfile`.
+If you do not want to install these dependencies on your local machine, a `Containerfile` is provided with
+all of the necessary tools.
 
 ## Scenario
 
