@@ -41,13 +41,12 @@ This repository contains:
 ### Requirements
 
 1. fix the MySQL stateful set
-2. add a Wordpress deployment matching the selectors on the `wordpress` service
-    - this should be stateless except for PVCs
+2. add a stateless Wordpress deployment matching the selectors on the `wordpress` service
 3. add liveness and readiness probes to all containers
 4. make sure all pods start up correctly and remain healthy after `make deploy`
 5. make sure all tests pass during `make test`
 6. fork this repository, commit your changes into a `feature/` branch, and push to a public git repository
-    - you can push to your personal Github or Gitlab account, or submit a pull request to our Github repository
+    - please make sure the link you provide is publicly visible
 
 ### Bonus Points
 
