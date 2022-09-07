@@ -52,8 +52,7 @@ This repository contains:
 
 1. attach the provided `PersistentVolumeClaim` to `/var/www/html` in the Wordpress deployment to make it stateful
 2. apply resource limits to the kubernetes pods
-3. apply a pod security policy to the kubernetes pods
-4. include a kubernetes Ingress resource for the AWS ALB ingress controller
+3. include a kubernetes Ingress resource for the AWS ALB ingress controller
     - we use https://github.com/kubernetes-sigs/aws-load-balancer-controller for ingress
-5. a branch with conventional commit history and a CHANGELOG file
+4. a branch with conventional commit history and a CHANGELOG file
     - we typically use https://github.com/conventional-changelog/standard-version to generate the CHANGELOG file
